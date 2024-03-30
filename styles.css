@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 15rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container-box {
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+}
+
+.top-section {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #37507e;
+  width: 80%;
+  padding: 2rem;
+  color: white;
+}
+
+.top-section > h1 {
+  font-size: 2.8rem;
+}
+
+.top-section > h4 {
+  font-size: 1.5rem;
+}
+
+.main-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #37507e;
+  border-radius: 5px;
+}
+
+.input-box > input {
+  height: 3rem;
+  width: 20rem;
+  font-size: 18px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .input-box > input {
+    width: 100%;
+  }
+}
+
+#cadCurrency,
+#eurCurrency {
+  height: 3rem;
+  width: 5rem;
+  background-color: #37507e;
+  color: white;
+  text-align: center;
+}
+
+.convert-btn,
+.clear-btn {
+  padding: 1rem 1.5rem;
+  background-color: #37507e;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.button-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 12px;
+}
+
+.button-menu > p {
+  color: white;
+}
+
+.reversible > img {
+  height: 50px;
+  width: auto;
+}
+
+.clear-btn:hover {
+  background-color: #244178;
+}
+
+.convert-btn:hover {
+  background-color: #244178;
+}
+
+.btn-div {
+  display: flex;
+  gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-div {
+    flex-direction: column;
+    align-items: center;
+  }
+}

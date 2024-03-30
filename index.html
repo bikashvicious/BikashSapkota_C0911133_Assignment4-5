@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Money Converter</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Container for the entire content -->
+    <div class="container-box">
+      <!-- Top section containing the title and description -->
+      <div class="top-section">
+        <h1>Canadian Dollar to US Dollar <span>.</span></h1>
+        <h4>Convert CAD to USD at the real exchange rate</h4>
+      </div>
+      <!-- Main section containing the conversion inputs -->
+      <div class="main-section">
+        
+        <!-- Section for entering USD amount -->
+        <div class="usd-section">
+          <label for="usdAmount">Amount</label>
+          <div class="input-box">
+            <input type="number" id="usdAmount" step="0.01" />
+            <!-- Button menu for selecting currency -->
+            <div class="button-menu">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/color/48/usa.png"
+                alt="usa"
+              />
+              <p>USD</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image indicating conversion direction -->
+        <div class="reversible">
+          <img src="pngwing.com.png" alt="" />
+        </div>
+
+        <!-- Section for displaying CAD amount -->
+        <div class="cad-section">
+          <label for="cadAmount">Converted To</label>
+          <div class="input-box">
+            <input type="number" id="cadAmount" step="0.01" />
+            <!-- Button menu for selecting currency -->
+            <div class="button-menu">
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/color/48/canada.png"
+                alt="canada"
+              />
+              <p>CAD</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section for displaying conversion result -->
+        <div id="result"></div>
+      </div>
+      <!-- Button section for conversion and clearing inputs -->
+      <div  class="btn-div">
+        <button class="convert-btn" onclick="convertMoney()">Convert</button>
+        <button class="clear-btn" onclick="clearInputs()">Clear</button>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
