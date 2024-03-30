@@ -1,9 +1,11 @@
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+/* Container styling */
 
 .container-box {
   display: flex;
@@ -14,13 +16,14 @@
   margin-left: 15rem;
 }
 
+/* Responsive adjustments for smaller screens */
 @media screen and (max-width: 768px) {
   .container-box {
     margin-left: 0;
     padding: 0 1rem;
   }
 }
-
+/* Styling for the top section */
 .top-section {
   margin-top: 2rem;
   display: flex;
@@ -65,13 +68,14 @@
   padding: 5px;
 }
 
+/* Responsive adjustments for input width on smaller screens */
 @media screen and (max-width: 768px) {
   .input-box > input {
     width: 100%;
   }
 }
 
-
+/* Styling for conversion and clear buttons */
 
 .convert-btn,
 .clear-btn {
@@ -113,7 +117,7 @@
   display: flex;
   gap: 50px;
 }
-
+/* Adjusting button layout for smaller screens */
 @media screen and (max-width: 768px) {
   .btn-div {
     flex-direction: column;
