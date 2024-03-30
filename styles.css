@@ -71,14 +71,7 @@
   }
 }
 
-#cadCurrency,
-#eurCurrency {
-  height: 3rem;
-  width: 5rem;
-  background-color: #37507e;
-  color: white;
-  text-align: center;
-}
+
 
 .convert-btn,
 .clear-btn {
